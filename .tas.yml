@@ -4,10 +4,10 @@ preRun:
         - npm ci
 preMerge:
   pattern:
-    - "./src/*"
+    - "./src/**/*.test.js"
 postMerge:
   pattern: 
-    - "./src/*"
+    - "./src/**/*.test.js"
 postRun:
      command:
         - node --version
